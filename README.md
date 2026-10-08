@@ -1,33 +1,16 @@
-# Stack Expression Example
+# Stack expression
 
-Operand and operator stacks illustrating multiplication precedence in an arithmetic expression.
+I used stacks here to work through the expression a + b * c. The values are a = 2, b = 3, and c = 4, so the answer should be 14.
 
-An educational C++ example developed from coursework, organized as a standalone project.
+The program does the multiplication first and then the addition. It uses operand and operator stacks to show the steps.
 
-## Build and run
+This only works through the expression already in the code. It does not take a new expression from the user.
 
-Requires a C++17 compiler and Make. Smoke checks also require Python 3.
+To build and run it, you need a C++17 compiler and Make. Open a terminal in this folder and run:
 
 ```sh
 make
 make run
-make check
 ```
 
-To choose a compiler: `make CXX=clang++` or `make CXX=g++`. Run `make clean` to remove build outputs.
-
-## Example
-
-The demonstration evaluates a + b * c with a=2, b=3, and c=4.
-
-## Structure
-
-- `src/`: source code and headers.
-- `tests/smoke.py`: representative console checks with execution timeouts.
-- `Makefile`: builds the source files together into `build/example`.
-
-## Scope
-
-The expression is fixed; this is not a general expression parser.
-
-The source retains the original exercise logic and explanatory comments. Build outputs, submission documents, and course materials are not part of this repository.
+You can also run `make check` to check the sample output. That needs Python 3. Use `make clean` if you want to remove the compiled program.
